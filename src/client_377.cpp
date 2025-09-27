@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "jagex2/io/protocol.h"
+#include "jagex2/io/Protocol.h"
 
 static PrintCallback gPrintCallback = nullptr;
 
