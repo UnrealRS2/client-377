@@ -1,7 +1,4 @@
 #include "client_377.h"
-
-#include <iostream>
-
 #include "jagex2/io/Protocol.h"
 
 static PrintCallback gPrintCallback = nullptr;

@@ -1,5 +1,4 @@
 #pragma once
-
 #include "Linkable.h"
 
 namespace jagex2::datastruct {

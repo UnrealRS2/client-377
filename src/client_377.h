@@ -1,4 +1,3 @@
-// MyClientWrapper.h
 #pragma once
 
 #ifdef CLIENT_API_EXPORTS

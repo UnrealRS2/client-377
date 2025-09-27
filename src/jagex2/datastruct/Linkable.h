@@ -1,6 +1,6 @@
 #pragma once
-
 #include <cstdint>
+
 namespace jagex2::datastruct {
     struct Linkable {
         //ObfuscatedName("ZUOIJLRD.a")
