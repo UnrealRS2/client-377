@@ -14,3 +14,4 @@ file(GLOB_RECURSE SOURCES
 add_library(client_377 SHARED ${SOURCES})
 
 target_compile_definitions(client_377 PRIVATE CLIENT_API_EXPORTS)
+target_include_directories(client_377 PRIVATE "C:/libs/boost_1_89_0")

@@ -9,7 +9,7 @@ namespace jagex2::datastruct {
         DoublyLinkable* prev2{nullptr};
 
         //ObfuscatedName("DPPNUUMQ.b()V")
-        void uncache() {
+        inline void uncache() {
             if (prev2) {
                 prev2->next2 = next2;
                 next2->prev2 = prev2;

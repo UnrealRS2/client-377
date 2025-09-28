@@ -1,20 +1,18 @@
 #include "client_377.h"
-#include "jagex2/io/Protocol.h"
 
-static PrintCallback gPrintCallback = nullptr;
+#include "jagex2/client/Client.h"
+#include "jagex2/io/Protocol.h"
 
 extern "C" {
 
-    CLIENT_API void SetPrintCallback(PrintCallback callback)
+    CLIENT_API void SetPrintCallback(api::PrintCallback callback)
     {
-        gPrintCallback = callback;
+        api::gPrintCallback = callback;
     }
 
     CLIENT_API void Init()
     {
-        if (gPrintCallback) {
-            const std::string message = "UnrealRS2 - Revision " + jagex2::io::Protocol::REVISION;
-            gPrintCallback(message.c_str());
-        }
+        auto client = jagex2::client::Client();
+        client.init_application(765, 503);
     }
 }

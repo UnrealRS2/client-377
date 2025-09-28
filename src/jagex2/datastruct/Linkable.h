@@ -11,7 +11,7 @@ namespace jagex2::datastruct {
         Linkable* prev{nullptr};
 
         //ObfuscatedName("ZUOIJLRD.a()V")
-        void unlink() {
+        inline void unlink() {
             if (prev) {
                 prev->next = next;
                 next->prev = prev;
