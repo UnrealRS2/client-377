@@ -30,9 +30,9 @@ namespace jagex2::client {
 
     //Unobfuscated
     void GameShell::run() {
-        if (api::gPrintCallback) {
+        if (api::printCallback) {
             std::string message = "UnrealRS2 - Revision " + io::Protocol::REVISION;
-            api::gPrintCallback(message.c_str());
+            api::printCallback(message.c_str());
         }
 
         //TODO: Handle frame listeners
@@ -43,8 +43,8 @@ namespace jagex2::client {
     //ObfuscatedName("JWWAIQPI.a(IZLjava/lang/String;)V")
     void GameShell::draw_progress(const int percent, const std::string& message) {
         std::string line = "[" + std::to_string(percent) + "%] " + message;
-        if (api::gPrintCallback)
-            api::gPrintCallback(line.c_str());
+        if (api::printCallback)
+            api::printCallback(line.c_str());
         //TODO: Capture graphics here
         //TODO: Capture Helvetica font here
         //TODO: fill black here

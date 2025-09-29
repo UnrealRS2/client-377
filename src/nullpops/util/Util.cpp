@@ -11,7 +11,7 @@ using namespace boost::multiprecision;
 
 /**
  * Java style BigInteger modPow()
- * uses Boost 1.89.0 header lib
+ * uses Boost 1.89.0 cpp_int header
  */
 std::vector<uint8_t> java_mod_pow(
     const std::vector<uint8_t>& input,
