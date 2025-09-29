@@ -4,7 +4,7 @@
 #include <vector>
 #include <memory>
 
-namespace jagex2::gfx {
+namespace jagex2::graphics {
 
     struct Pix2D : datastruct::DoublyLinkable {
         //ObfuscatedName("LFYNQWSZ.a(ZII[I)V")

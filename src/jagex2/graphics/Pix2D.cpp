@@ -1,7 +1,7 @@
 #include "pix2d.h"
 #include <cmath>
 
-namespace jagex2::gfx {
+namespace jagex2::graphics {
 
     //ObfuscatedName("LFYNQWSZ.m")
     int Pix2D::width = 0;

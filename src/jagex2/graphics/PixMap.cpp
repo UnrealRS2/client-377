@@ -15,7 +15,7 @@ namespace jagex2::graphics {
 
     //ObfuscatedName("ISZGOOMR.a(Z)V")
     void PixMap::bind() const {
-        gfx::Pix2D::bind(width, height, const_cast<int*>(pixels.data()));
+        Pix2D::bind(width, height, const_cast<int*>(pixels.data()));
     }
 
     //ObfuscatedName("ISZGOOMR.a(IILjava/awt/Graphics;Z)V")
